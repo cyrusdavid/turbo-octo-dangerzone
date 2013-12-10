@@ -10,7 +10,7 @@ image:
 <a href="https://github.com/Seldaek/monolog" rel="nofollow">Monolog</a> provides many handlers and formatters. We'll use the `SocketHandler` and `LineFormatter` to forward ours logs to <a href="https://papertrailapp.com/?thank=93d0b9" rel="nofollow">Papertrail</a>.
 
 
-~~~php
+{% highlight php startinline %}
 $appName = 'MyPHPApp';
 $port = 1234;
 $connection = 'udp://logs.papertrailapp.com:' . $port;
@@ -26,14 +26,14 @@ $handler->setFormatter(new Monolog\Formatter\LineFormatter($msgFormat, $dateForm
 
 $writer = new Monolog\Logger($appName);
 $writer->pushHandler($handler);
-~~~
+{% endhighlight %}
 
 Laravel
 -------
 
 If you're using the awesome Laravel 4 framework, replace these line from your `app/start/global.php` file:
 
-~~~php
+{% highlight php startinline %}
 //$logFile = 'log-'.php_sapi_name().'.txt';
 //Log::useDailyFiles(storage_path().'/logs/'.$logFile);
 
@@ -50,11 +50,11 @@ $handler = new Monolog\Handler\SocketHandler($connection);
 $handler->setFormatter(new Monolog\Formatter\LineFormatter($format, $dateFormat));
 
 Log::getMonolog()->pushHandler($handler);
-~~~
+{% endhighlight %}
 
 **OR** If you prefer the elegant way:
 
-~~~php
+{% highlight php startinline %}
 // app/config/papertrail.php
 
 return array(
@@ -78,7 +78,7 @@ $handler->setFormatter(
 );
 
 Log::getMonolog()->pushHandler($handler);
-~~~
+{% endhighlight %}
 
 Links
 -----
