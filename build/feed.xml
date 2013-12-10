@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+<title type="text">Feed2</title>
+<generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
+<link rel="self" type="application/atom+xml" href="http://feed.dev/feed.xml" />
+<link rel="alternate" type="text/html" href="http://feed.dev" />
+<updated>2013-12-10T10:00:12+00:00</updated>
+<id>http://feed.dev/</id>
+
+
+<entry>
+  <title type="html"><![CDATA[How to Improve Video Color in VLC]]></title>
+  <link>http://feed.dev/how-to-improve-video-color-in-vlc</link>
+  <id>http://feed.dev/how-to-improve-video-color-in-vlc</id>
+  <published>2013-09-10T00:05:00+00:00</published>
+  <updated>2013-09-10T00:05:00+00:00</updated>
+  <author>
+    <name>David</name>
+    <uri>http://feed.dev</uri>
+    <email>you@email.com</email>
+  </author>
+  <content type="html">&lt;p&gt;When you play videos on &lt;a href=&quot;http://www.videolan.org/vlc/index.html‎&quot; rel=&quot;nofollow&quot;&gt;VLC&lt;/a&gt; you may notice the video looks washed out compared to other players. Here&amp;#8217;s how to fix it!&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Go to &lt;code&gt;Start&lt;/code&gt; » &lt;code&gt;Control Panel&lt;/code&gt; » &lt;code&gt;Appearance and Personalization&lt;/code&gt; » &lt;code&gt;nVidia Control Panel&lt;/code&gt; or double-click on the nvidia logo at your system tray.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Under &lt;code&gt;Video&lt;/code&gt; » &lt;code&gt;Adjust Video Color Settings&lt;/code&gt; » &lt;code&gt;Advanced&lt;/code&gt; tab, select the &lt;em&gt;Dynamic Range&lt;/em&gt; to &lt;strong&gt;Full 0-255&lt;/strong&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Hit &lt;code&gt;Apply&lt;/code&gt; and see the changes!&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;BEFORE&lt;/strong&gt;
+&lt;img src=&quot;http://i.imgur.com/nja6Fj6.jpg&quot; alt=&quot;VLC Fix washed out colors&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;AFTER&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/mCWOwm2.jpg&quot; alt=&quot;VLC black levels fix&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Better, right?&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://feed.dev/how-to-improve-video-color-in-vlc&quot;&gt;How to Improve Video Color in VLC&lt;/a&gt; was originally published by David at &lt;a href=&quot;http://feed.dev&quot;&gt;Feed2&lt;/a&gt; on September 10, 2013.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[FIX: Git push rejected, repository is empty]]></title>
+  <link>http://feed.dev/heroku-push-rejected-repository-is-empty</link>
+  <id>http://feed.dev/heroku-push-rejected-repository-is-empty</id>
+  <published>2013-08-01T19:50:00+00:00</published>
+  <updated>2013-08-01T19:50:00+00:00</updated>
+  <author>
+    <name>David</name>
+    <uri>http://feed.dev</uri>
+    <email>you@email.com</email>
+  </author>
+  <content type="html">&lt;p&gt;You know the repository is not empty but no matter how many times you enter &lt;code&gt;git push&lt;/code&gt; this error occurs.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;
+    !     Push rejected, repository is empty
+    To git@heroku.com:my-heroku-site.git
+    ! [remote rejected] master -&amp;gt; master (pre-receive hook declined)
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;The problem is your repository only contains files beginning with a &lt;code&gt;.&lt;/code&gt; (dot) like in this repository:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;
+$ git ls-files
+.vendor_urls
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;The solution is to add another file which doesn&amp;#8217;t start with a dot, like a &lt;code&gt;Procfile&lt;/code&gt;.&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://feed.dev/heroku-push-rejected-repository-is-empty&quot;&gt;FIX: Git push rejected, repository is empty&lt;/a&gt; was originally published by David at &lt;a href=&quot;http://feed.dev&quot;&gt;Feed2&lt;/a&gt; on August 01, 2013.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Use Monolog to send your logs to Papertrail]]></title>
+  <link>http://feed.dev/use-monolog-to-send-your-logs-to-papertrail</link>
+  <id>http://feed.dev/use-monolog-to-send-your-logs-to-papertrail</id>
+  <published>2013-07-10T13:44:00+00:00</published>
+  <updated>2013-07-10T13:44:00+00:00</updated>
+  <author>
+    <name>David</name>
+    <uri>http://feed.dev</uri>
+    <email>you@email.com</email>
+  </author>
+  <content type="html">&lt;p&gt;&lt;a href=&quot;https://github.com/Seldaek/monolog&quot; rel=&quot;nofollow&quot;&gt;Monolog&lt;/a&gt; provides many handlers and formatters. We&amp;#8217;ll use the &lt;code&gt;SocketHandler&lt;/code&gt; and &lt;code&gt;LineFormatter&lt;/code&gt; to forward ours logs to &lt;a href=&quot;https://papertrailapp.com/?thank=93d0b9&quot; rel=&quot;nofollow&quot;&gt;Papertrail&lt;/a&gt;.&lt;/p&gt;
+
+&lt;div&gt;&lt;div class=&quot;CodeRay&quot;&gt;
+  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;local-variable&quot;&gt;$appName&lt;/span&gt; = &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;MyPHPApp&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;/span&gt;;
+&lt;span class=&quot;local-variable&quot;&gt;$port&lt;/span&gt; = &lt;span class=&quot;integer&quot;&gt;1234&lt;/span&gt;;
+&lt;span class=&quot;local-variable&quot;&gt;$connection&lt;/span&gt; = &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;udp://logs.papertrailapp.com:&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;/span&gt; . &lt;span class=&quot;local-variable&quot;&gt;$port&lt;/span&gt;;
+
+
+&lt;span class=&quot;local-variable&quot;&gt;$msgFormat&lt;/span&gt; = &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;&amp;lt;22&amp;gt;%datetime% &lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;/span&gt;
+        . &lt;span class=&quot;local-variable&quot;&gt;$appName&lt;/span&gt;
+        . &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;content&quot;&gt; %channel%: Level[%level_name%]: %message% %context% %extra%&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;/span&gt;;
+&lt;span class=&quot;local-variable&quot;&gt;$dateFormat&lt;/span&gt; = &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;M d H:i:s&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;/span&gt;;
+
+&lt;span class=&quot;local-variable&quot;&gt;$handler&lt;/span&gt; = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;constant&quot;&gt;Monolog&lt;/span&gt;\&lt;span class=&quot;constant&quot;&gt;Handler&lt;/span&gt;\&lt;span class=&quot;constant&quot;&gt;SocketHandler&lt;/span&gt;(&lt;span class=&quot;local-variable&quot;&gt;$connection&lt;/span&gt;);
+&lt;span class=&quot;local-variable&quot;&gt;$handler&lt;/span&gt;-&amp;gt;setFormatter(&lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;constant&quot;&gt;Monolog&lt;/span&gt;\&lt;span class=&quot;constant&quot;&gt;Formatter&lt;/span&gt;\&lt;span class=&quot;constant&quot;&gt;LineFormatter&lt;/span&gt;(&lt;span class=&quot;local-variable&quot;&gt;$msgFormat&lt;/span&gt;, &lt;span class=&quot;local-variable&quot;&gt;$dateFormat&lt;/span&gt;));
+
+&lt;span class=&quot;local-variable&quot;&gt;$writer&lt;/span&gt; = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;constant&quot;&gt;Monolog&lt;/span&gt;\&lt;span class=&quot;constant&quot;&gt;Logger&lt;/span&gt;(&lt;span class=&quot;local-variable&quot;&gt;$appName&lt;/span&gt;);
+&lt;span class=&quot;local-variable&quot;&gt;$writer&lt;/span&gt;-&amp;gt;pushHandler(&lt;span class=&quot;local-variable&quot;&gt;$handler&lt;/span&gt;);
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;laravel&quot;&gt;Laravel&lt;/h2&gt;
+
+&lt;p&gt;If you&amp;#8217;re using the awesome Laravel 4 framework, replace these line from your &lt;code&gt;app/start/global.php&lt;/code&gt; file:&lt;/p&gt;
+
+&lt;div&gt;&lt;div class=&quot;CodeRay&quot;&gt;
+  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;comment&quot;&gt;//$logFile = 'log-'.php_sapi_name().'.txt';&lt;/span&gt;
+&lt;span class=&quot;comment&quot;&gt;//Log::useDailyFiles(storage_path().'/logs/'.$logFile);&lt;/span&gt;
+
+&lt;span class=&quot;local-variable&quot;&gt;$appName&lt;/span&gt; = &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;MyPHPApp&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;/span&gt;;
+&lt;span class=&quot;local-variable&quot;&gt;$port&lt;/span&gt; = &lt;span class=&quot;integer&quot;&gt;1234&lt;/span&gt;;
+&lt;span class=&quot;local-variable&quot;&gt;$connection&lt;/span&gt; = &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;udp://logs.papertrailapp.com:&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;/span&gt; . &lt;span class=&quot;local-variable&quot;&gt;$port&lt;/span&gt;;
+
+&lt;span class=&quot;local-variable&quot;&gt;$format&lt;/span&gt; = &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;&amp;lt;22&amp;gt;%datetime% &lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;/span&gt;
+        . &lt;span class=&quot;local-variable&quot;&gt;$appName&lt;/span&gt;
+        . &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;content&quot;&gt; %channel%: Level[%level_name%]: %message% %context% %extra%&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;/span&gt;;
+&lt;span class=&quot;local-variable&quot;&gt;$dateFormat&lt;/span&gt; = &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;M d H:i:s&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;/span&gt;;
+
+&lt;span class=&quot;local-variable&quot;&gt;$handler&lt;/span&gt; = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;constant&quot;&gt;Monolog&lt;/span&gt;\&lt;span class=&quot;constant&quot;&gt;Handler&lt;/span&gt;\&lt;span class=&quot;constant&quot;&gt;SocketHandler&lt;/span&gt;(&lt;span class=&quot;local-variable&quot;&gt;$connection&lt;/span&gt;);
+&lt;span class=&quot;local-variable&quot;&gt;$handler&lt;/span&gt;-&amp;gt;setFormatter(&lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;constant&quot;&gt;Monolog&lt;/span&gt;\&lt;span class=&quot;constant&quot;&gt;Formatter&lt;/span&gt;\&lt;span class=&quot;constant&quot;&gt;LineFormatter&lt;/span&gt;(&lt;span class=&quot;local-variable&quot;&gt;$format&lt;/span&gt;, &lt;span class=&quot;local-variable&quot;&gt;$dateFormat&lt;/span&gt;));
+
+&lt;span class=&quot;predefined&quot;&gt;Log&lt;/span&gt;::getMonolog()-&amp;gt;pushHandler(&lt;span class=&quot;local-variable&quot;&gt;$handler&lt;/span&gt;);
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;OR&lt;/strong&gt; If you prefer the elegant way:&lt;/p&gt;
+
+&lt;div&gt;&lt;div class=&quot;CodeRay&quot;&gt;
+  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;comment&quot;&gt;// app/config/papertrail.php&lt;/span&gt;
+
+&lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;predefined&quot;&gt;array&lt;/span&gt;(
+    &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;/span&gt; =&amp;gt; &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;udp://logs.papertrailapp.com:1234&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;/span&gt;,
+    &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;/span&gt; =&amp;gt; &lt;span class=&quot;predefined&quot;&gt;array&lt;/span&gt;(
+        &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;message&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;/span&gt; =&amp;gt; &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;&amp;lt;22&amp;gt;%datetime% MyLaravelApp %channel%: Level[%level_name%]: %message% %context% %extra%&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;/span&gt;,
+        &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;date&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;/span&gt; =&amp;gt; &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;M d H:i:s&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;/span&gt;
+    )
+);
+
+&lt;span class=&quot;comment&quot;&gt;// app/start/global.php&lt;/span&gt;
+
+&lt;span class=&quot;local-variable&quot;&gt;$papertrail&lt;/span&gt; = &lt;span class=&quot;constant&quot;&gt;Config&lt;/span&gt;::get(&lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;papertrail&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;/span&gt;);
+
+&lt;span class=&quot;local-variable&quot;&gt;$handler&lt;/span&gt; = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;constant&quot;&gt;Monolog&lt;/span&gt;\&lt;span class=&quot;constant&quot;&gt;Handler&lt;/span&gt;\&lt;span class=&quot;constant&quot;&gt;SocketHandler&lt;/span&gt;(&lt;span class=&quot;local-variable&quot;&gt;$papertrail&lt;/span&gt;[&lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;/span&gt;]);
+&lt;span class=&quot;local-variable&quot;&gt;$handler&lt;/span&gt;-&amp;gt;setFormatter(
+    &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;constant&quot;&gt;Monolog&lt;/span&gt;\&lt;span class=&quot;constant&quot;&gt;Formatter&lt;/span&gt;\&lt;span class=&quot;constant&quot;&gt;LineFormatter&lt;/span&gt;(
+        &lt;span class=&quot;local-variable&quot;&gt;$papertrail&lt;/span&gt;[&lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;/span&gt;][&lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;message&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;/span&gt;],
+        &lt;span class=&quot;local-variable&quot;&gt;$papertrail&lt;/span&gt;[&lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;/span&gt;][&lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;date&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;/span&gt;]
+    )
+);
+
+&lt;span class=&quot;predefined&quot;&gt;Log&lt;/span&gt;::getMonolog()-&amp;gt;pushHandler(&lt;span class=&quot;local-variable&quot;&gt;$handler&lt;/span&gt;);
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;links&quot;&gt;Links&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://papertrailapp.com/?thank=93d0b9&quot; rel=&quot;nofollow&quot;&gt;Don&amp;#8217;t have a Papertrail account yet? Register here&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://help.papertrailapp.com/kb/configuration/configuring-centralized-logging-from-php-apps&quot; rel=&quot;nofolllow&quot; target=&quot;_blank&quot;&gt;Configuring centralized logging from PHP apps&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://feed.dev/use-monolog-to-send-your-logs-to-papertrail&quot;&gt;Use Monolog to send your logs to Papertrail&lt;/a&gt; was originally published by David at &lt;a href=&quot;http://feed.dev&quot;&gt;Feed2&lt;/a&gt; on July 10, 2013.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Building your own Base Box for Vagrant]]></title>
+  <link>http://feed.dev/building-your-own-base-box-for-vagrant</link>
+  <id>http://feed.dev/building-your-own-base-box-for-vagrant</id>
+  <published>2013-02-26T16:30:00+00:00</published>
+  <updated>2013-02-26T16:30:00+00:00</updated>
+  <author>
+    <name>David</name>
+    <uri>http://feed.dev</uri>
+    <email>you@email.com</email>
+  </author>
+  <content type="html">&lt;p&gt;Here are steps on creating your own base box for Vagrant. I&amp;#8217;ll be using a Debian linux distro.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: Try &lt;a href=&quot;https://github.com/jedi4ever/veewee&quot;&gt;VeeWee&lt;/a&gt; If you haven&amp;#8217;t. It eases the building of Vagrant boxes.&lt;/p&gt;
+
+&lt;h2 id=&quot;requirements&quot;&gt;Requirements&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.debian.org/CD/&quot;&gt;Get a copy&lt;/a&gt; of a debian release. I chose &lt;code&gt;debian-6.0.6-i386-CD-1.iso&lt;/code&gt;. After downloading, don&amp;#8217;t extract it.&lt;/li&gt;
+  &lt;li&gt;Vagrant depends on Oracle’s VirtualBox to create all of its virtual environments, so &lt;a href=&quot;https://www.virtualbox.org/wiki/Downloads&quot;&gt;download&lt;/a&gt; it as well and install.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;getting-started&quot;&gt;Getting Started&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Launch Oracle VM VirtualBox Manager and create a new machine. &lt;em&gt;I named it &amp;#8220;Debby&amp;#8221;&lt;/em&gt;. Make sure you &lt;strong&gt;allocate enough hard disk space&lt;/strong&gt; because you won&amp;#8217;t be able to modify that later. &lt;em&gt;I set mine to 8GB.&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;Open the machine settings and click on &lt;code&gt;Storage&lt;/code&gt; on the left. Select the empty under &lt;code&gt;Controller: IDE&lt;/code&gt;. Beside the dropdown, click the icon to select your ISO image you just downloaded.&lt;/li&gt;
+  &lt;li&gt;Start the VM and Install&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;convention-over-configuration&quot;&gt;Convention over Configuration&lt;/h2&gt;
+
+&lt;p&gt;As vagrant recommends, follow these if possible:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Hostname: vagrant-debian
+Domain: vagrantup.com
+Root Password: vagrant
+Main account login: vagrant
+Main account password: vagrant
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;permissions-amp-guest-additions&quot;&gt;Permissions &amp;amp; Guest Additions&lt;/h2&gt;
+
+&lt;p&gt;After installing:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ su
+Password:
+$ apt-get install sudo
+$ visudo
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&amp;gt; You may need to change your apt list&lt;/p&gt;
+
+&lt;p&gt;Append these 3 lines:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Defaults    env_keep=&quot;SSH_AUTH_SOCK&quot;
+%admin ALL=(ALL) ALL
+%admin ALL=NOPASSWD: ALL
+
+$ groupadd admin
+$ usermod -a -G admin vagrant
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Reboot the VM&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ sudo -i
+$ apt-get autoremove virtualbox-ose-guest-dkms virtualbox-ose-guest-utils virtualbox-ose-guest-x11
+$ apt-get install linux-headers-$(uname -r) build-essential
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;On the menu list, select &lt;strong&gt;Devices&lt;/strong&gt; &amp;gt; &lt;strong&gt;Install Guest Additions&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ mount /dev/cdrom /media/cdrom
+$ sh /media/cdrom/VBoxLinuxAdditions.run
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Reboot the VM&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ su -
+$ apt-get install ruby rubygems puppet openssh-server openssh-client
+$ echo 'UseDNS no' &amp;amp;gt;&amp;amp;gt; /etc/ssh/sshd_config
+$ gem install --no-rdoc --no-ri chef
+$ echo &quot;deb http://apt.opscode.com/ squeeze-0.10 main&quot; &amp;amp;gt; /etc/apt/sources.list.d/opscode.list
+$ apt-get update
+$ apt-get install opscode-keyring
+$ apt-get install chef
+$ exit
+# you're now user: Vagrant
+$ mkdir .ssh
+$ wget --no-check-certificate -O .ssh/authorized_keys https://raw.github.com/mitchellh/vagrant/master/keys/vagrant.pub
+$ chmod 700 .ssh
+$ chmod 600 .ssh/authorized_keys
+$ sudo apt-get clean
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Shutdown&lt;/p&gt;
+
+&lt;h2 id=&quot;build-vagrant-box-file&quot;&gt;Build Vagrant .box File&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;$ vagrant package --base Debby
+[Debby] Clearing any previously set forwarded ports...
+[Debby] Creating temporary directory for export...
+[Debby] Exporting VM...
+[Debian] Compressing package to: package.box
+
+$ mv package.box vagrant-debian-squeeze32.box
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;use-your-vagrant-base-box&quot;&gt;Use your Vagrant base box&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;$ vagrant box add my_box vagrant-debian-squeeze32.box
+[vagrant] Downloading with Vagrant::Downloaders::File...
+[vagrant] Copying box to temporary location...
+[vagrant] Extracting box...
+[vagrant] Verifying box...
+[vagrant] Cleaning up downloaded box...
+$ mkdir testEnvironment
+$ cd testEnvironment
+$ vagrant init my_box
+$ vagrant up
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Resources:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;table&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;[Create a Vanilla Debian Squeeze Vagrant Base Box&lt;/td&gt;
+          &lt;td&gt;Brian Fisher](http://brianfisher.name/content/create-vanilla-debian-squeeze-vagrant-base-box)&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://debgen.simplylinux.ch/&quot;&gt;Debian Sources List Generator&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;www.vagrantup.com/v1/docs/base_boxes.html&quot;&gt;Vagrant Documentation - Documentation - Base Boxes&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://feed.dev/building-your-own-base-box-for-vagrant&quot;&gt;Building your own Base Box for Vagrant&lt;/a&gt; was originally published by David at &lt;a href=&quot;http://feed.dev&quot;&gt;Feed2&lt;/a&gt; on February 26, 2013.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Don' t merge a file but be able to push it]]></title>
+  <link>http://feed.dev/don-t-merge-a-file-but-be-able-to-push-it</link>
+  <id>http://feed.dev/don-t-merge-a-file-but-be-able-to-push-it</id>
+  <published>2013-02-14T22:34:00+00:00</published>
+  <updated>2013-02-14T22:34:00+00:00</updated>
+  <author>
+    <name>David</name>
+    <uri>http://feed.dev</uri>
+    <email>you@email.com</email>
+  </author>
+  <content type="html">&lt;p&gt;So I wanted to not merge a specific file. But adding it to &lt;code&gt;.gitignore&lt;/code&gt; is not a solution since I won&amp;#8217;t be able to push that file to my remotes.&lt;/p&gt;
+
+&lt;p&gt;I use SASS as my CSS preprocessor so I have my css file expanded on development and compressed on production in my &lt;code&gt;config.rb&lt;/code&gt; file.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# development
+environment=:development
+
+#production
+environment=:production
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;When I merge &lt;code&gt;production&lt;/code&gt; with &lt;code&gt;development&lt;/code&gt; I always get conflicts with my css file. So what&amp;#8217;s the way to solve this?&lt;/p&gt;
+
+&lt;h2 id=&quot;use-gitattributes&quot;&gt;Use .gitattributes&lt;/h2&gt;
+
+&lt;p&gt;Try adding the following to your &lt;code&gt;.gitattributes&lt;/code&gt; (production branch)&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;*.css merge=ours
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Then define configurations for merge &lt;code&gt;ours&lt;/code&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;git config merge.ours.name 'always keep ours'
+git config merge.ours.driver 'touch %A'
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If your look into your &lt;code&gt;.git/config&lt;/code&gt; file it shall contain:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[merge &quot;ours&quot;]
+    name = always keep ours
+    driver = touch %A
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;After this try doing a merge and you won&amp;#8217;t get conflicts anymore.&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://feed.dev/don-t-merge-a-file-but-be-able-to-push-it&quot;&gt;Don' t merge a file but be able to push it&lt;/a&gt; was originally published by David at &lt;a href=&quot;http://feed.dev&quot;&gt;Feed2&lt;/a&gt; on February 14, 2013.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[ANSI Colors on your Windows Command Line]]></title>
+  <link>http://feed.dev/ansi-colors-on-your-windows-command-line</link>
+  <id>http://feed.dev/ansi-colors-on-your-windows-command-line</id>
+  <published>2013-02-12T21:12:00+00:00</published>
+  <updated>2013-02-12T21:12:00+00:00</updated>
+  <author>
+    <name>David</name>
+    <uri>http://feed.dev</uri>
+    <email>you@email.com</email>
+  </author>
+  <content type="html">&lt;p&gt;So you want those ANSI escaped sequences to be parsed into colors on your Windows Command Line? Not a problem.&lt;/p&gt;
+
+&lt;p&gt;Here&amp;#8217;s what it looks like before:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/rQYHlv2.png&quot; alt=&quot;colors not parsed on command line prompt&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;and after having ANSICON installed:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/CBfpgTg.png&quot; alt=&quot;Colored command prompt on windows&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;get-ansicon&quot;&gt;Get ANSICON&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://adoxa.3eeweb.com/ansicon/&quot; rel=&quot;nofollow&quot;&gt;Get a copy&lt;/a&gt; of ANSICON (&lt;a href=&quot;http://adoxa.3eeweb.com/ansicon/dl.php?f=ansicon&quot; rel=&quot;nofollow&quot;&gt;or Latest here.&lt;/a&gt;).&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Extract it to &lt;code&gt;C:\Ansicon&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Open your command line and cd to that directory then execute &lt;code&gt;ansicon -i&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;code&gt;
+C:
+cd C:\Ansicon
+ansicon -i
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Restart your command line prompt and test if it worked&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;msysgit&quot;&gt;MSysGit&lt;/h2&gt;
+
+&lt;p&gt;When using it on MSysGit it might not work. Check the properties of your shortcut and make sure the target location looks similar:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;C:\Windows\SysWOW64\cmd.exe /c &quot;&quot;C:\Program Files (x86)\Git\bin\sh.exe&quot; --login -i&quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;It has to have that &lt;code&gt;C:\Windows\SysWOW64\cmd.exe&lt;/code&gt; at the beginning.&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://feed.dev/ansi-colors-on-your-windows-command-line&quot;&gt;ANSI Colors on your Windows Command Line&lt;/a&gt; was originally published by David at &lt;a href=&quot;http://feed.dev&quot;&gt;Feed2&lt;/a&gt; on February 12, 2013.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Debugging PHP Exceptions using Xdebug]]></title>
+  <link>http://feed.dev/debugging-php-exceptions-using-xdebug</link>
+  <id>http://feed.dev/debugging-php-exceptions-using-xdebug</id>
+  <published>2013-01-24T15:28:00+00:00</published>
+  <updated>2013-01-24T15:28:00+00:00</updated>
+  <author>
+    <name>David</name>
+    <uri>http://feed.dev</uri>
+    <email>you@email.com</email>
+  </author>
+  <content type="html">&lt;p&gt;The only reason I used &lt;a href=&quot;http://xdebug.org/index.php&quot; rel=&quot;nofollow&quot;&gt;Xdebug&lt;/a&gt; before was because of the cool colors when I &lt;code&gt;var_dump&lt;/code&gt; things. Then I discovered Xdebug could be way cooler than that.&lt;/p&gt;
+
+&lt;p&gt;When you encounter an exception in PHP the only error that appears is:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text&quot;&gt;PHP ErrorException:  Warning: Invalid argument supplied for foreach() in E:\dev\vendor\laravel\framework\src\Illuminate\Database\Query\Gramm ars\Grammar.php line 194 in E:\dev\vendor\laravel\framework\src\Illuminate\Database\Query\Grammars\Grammar.php on line 194
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;I didn&amp;#8217;t know what the hell made that was going on for that to be thrown. So Xdebug comes in! Add this to your &lt;code&gt;php.ini&lt;/code&gt; configuration (download the xdebug extension if you haven&amp;#8217;t):&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text&quot;&gt;xdebug.show_exception_trace=1
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;After restarting PHP-CGI I got a stack trace of how I got the exception:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text&quot;&gt;PHP ErrorException:  Warning: Invalid argument supplied for foreach() in E:\dev\vendor\laravel\framework\src\Illuminate\Database\Query\Grammars\Grammar.php line 194 in E:\dev\vendor\laravel\framework\
+src\Illuminate\Database\Query\Grammars\Grammar.php on line 194
+PHP Stack trace:
+PHP   1. {main}() E:\dev\artisan:0
+PHP   2. Symfony\Component\Console\Application-&amp;gt;run() E:\dev\artisan:73
+PHP   3. Symfony\Component\Console\Application-&amp;gt;doRun() E:\dev\vendor\symfony\console\Symfony\Component\Console\Application.php:106
+PHP   4. Illuminate\Console\Command-&amp;gt;run() E:\dev\vendor\symfony\console\Symfony\Component\Console\Application.php:193
+PHP   5. Symfony\Component\Console\Command\Command-&amp;gt;run() E:\dev\vendor\laravel\framework\src\Illuminate\Console\Command.php:95
+PHP   6. Illuminate\Console\Command-&amp;gt;execute() E:\dev\vendor\symfony\console\Symfony\Component\Console\Command\Command.php:240
+PHP   7. ScrapeResults-&amp;gt;fire() E:\dev\vendor\laravel\framework\src\Illuminate\Console\Command.php:107
+PHP   8. Results\Category-&amp;gt;update() E:\dev\app\commands\ScrapeResults.php:120
+PHP   9. Illuminate\Database\Eloquent\Model-&amp;gt;__call() E:\dev\app\commands\ScrapeResults.php:120
+PHP  10. call_user_func_array() E:\dev\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1174
+PHP  11. Illuminate\Database\Eloquent\Builder-&amp;gt;__call() E:\dev\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:0
+PHP  12. call_user_func_array() E:\dev\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php:443
+PHP  13. Illuminate\Database\Query\Builder-&amp;gt;update() E:\dev\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php:443
+PHP  14. Illuminate\Database\Query\Grammars\Grammar-&amp;gt;compileUpdate() E:\dev\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.p hp:1045
+PHP  15. Illuminate\Database\Query\Grammars\Grammar-&amp;gt;compileWheres() E:\dev\vendor\laravel\framework\src\Illuminate\Database\Query\Grammars\ Grammar.php:532
+PHP  16. Symfony\Component\HttpKernel\Debug\ErrorHandler-&amp;gt;handle() E:\dev\vendor\laravel\framework\src\Illuminate\Database\Query\Grammars\Grammar.php:194
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Now I know which specific lines were called which lead to that exception. Yey!&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://feed.dev/debugging-php-exceptions-using-xdebug&quot;&gt;Debugging PHP Exceptions using Xdebug&lt;/a&gt; was originally published by David at &lt;a href=&quot;http://feed.dev&quot;&gt;Feed2&lt;/a&gt; on January 24, 2013.&lt;/p&gt;</content>
+</entry>
+
+</feed>
