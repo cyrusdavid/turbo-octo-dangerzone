@@ -11,11 +11,13 @@ So I wanted to not merge a specific file. But adding it to `.gitignore` is not a
 
 I use SASS as my CSS preprocessor so I have my css file expanded on development and compressed on production in my `config.rb` file.
 
-    # development
-    environment=:development
+{% highlight text %}
+# development
+environment=:development
 
-    #production
-    environment=:production
+#production
+environment=:production
+{% endhighlight %}
 
 When I merge `production` with `development` I always get conflicts with my css file. So what's the way to solve this?
 
@@ -23,17 +25,23 @@ When I merge `production` with `development` I always get conflicts with my css 
 
 Try adding the following to your `.gitattributes` (production branch)
 
-    *.css merge=ours
+{% highlight text %}
+*.css merge=ours
+{% endhighlight %}
 
 Then define configurations for merge `ours`:
 
-    git config merge.ours.name 'always keep ours'
-    git config merge.ours.driver 'touch %A'
+{% highlight text %}
+$ git config merge.ours.name 'always keep ours'
+$ git config merge.ours.driver 'touch %A'
+{% endhighlight %}
 
 If your look into your `.git/config` file it shall contain:
 
-    [merge "ours"]
-        name = always keep ours
-        driver = touch %A
+{% highlight text %}
+[merge "ours"]
+    name = always keep ours
+    driver = touch %A
+{% endhighlight %}
 
 After this try doing a merge and you won't get conflicts anymore.
