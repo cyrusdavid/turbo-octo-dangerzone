@@ -2,8 +2,8 @@ title:            Feed2
 description:      "Articles include tutorials, tips and guides about anything"
 disqus_shortname:
 #Your site's domain goes here. Leave localhost server or blank when working locally.
-url:              http://feed.dev
-destination:      build
+url:              http://feed2.me
+destination:      _site
 
 # Owner/author information
 owner:
