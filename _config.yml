@@ -1,6 +1,6 @@
 title:            Feed2
 description:      "Articles include tutorials, tips and guides about anything"
-disqus_shortname:
+disqus_shortname: fd2me
 #Your site's domain goes here. Leave localhost server or blank when working locally.
 url:              http://feed2.me
 destination:      _site
